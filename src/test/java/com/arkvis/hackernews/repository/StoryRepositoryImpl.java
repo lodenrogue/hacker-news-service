@@ -1,6 +1,6 @@
-package com.arkvis.ycservice.repository;
+package com.arkvis.hackernews.repository;
 
-import com.arkvis.ycservice.model.Story;
+import com.arkvis.hackernews.model.Story;
 import retrofit2.Call;
 import retrofit2.Response;
 

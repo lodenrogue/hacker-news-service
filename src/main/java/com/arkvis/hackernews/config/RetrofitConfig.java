@@ -1,4 +1,4 @@
-package com.arkvis.ycservice.config;
+package com.arkvis.hackernews.config;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

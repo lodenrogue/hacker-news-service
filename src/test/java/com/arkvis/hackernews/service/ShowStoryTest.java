@@ -1,6 +1,6 @@
-package com.arkvis.ycservice.service;
+package com.arkvis.hackernews.service;
 
-import com.arkvis.ycservice.model.Story;
+import com.arkvis.hackernews.model.Story;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -8,7 +8,7 @@ import java.util.List;
 
 import static org.junit.Assert.assertFalse;
 
-public class TopStoryTest extends AbstractStoryTest {
+public class ShowStoryTest extends AbstractStoryTest {
 
     @Before
     public void setUp() {
@@ -17,7 +17,7 @@ public class TopStoryTest extends AbstractStoryTest {
 
     @Test
     public void should_returnShowStories_when_callingRealService() {
-        StoryService storyService = new TopStoryService();
+        StoryService storyService = new ShowStoryService();
         List<Story> stories = storyService.getAllStories();
         assertFalse(stories.isEmpty());
     }

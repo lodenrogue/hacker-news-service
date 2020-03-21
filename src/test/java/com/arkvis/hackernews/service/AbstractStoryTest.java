@@ -1,8 +1,8 @@
-package com.arkvis.ycservice.service;
+package com.arkvis.hackernews.service;
 
-import com.arkvis.ycservice.model.Story;
-import com.arkvis.ycservice.repository.StoryRepository;
-import com.arkvis.ycservice.repository.StoryRepositoryImpl;
+import com.arkvis.hackernews.model.Story;
+import com.arkvis.hackernews.repository.StoryRepository;
+import com.arkvis.hackernews.repository.StoryRepositoryImpl;
 import org.apache.commons.lang3.tuple.Pair;
 import org.junit.Test;
 

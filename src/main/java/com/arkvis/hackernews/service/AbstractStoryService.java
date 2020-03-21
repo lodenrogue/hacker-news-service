@@ -1,7 +1,7 @@
-package com.arkvis.ycservice.service;
+package com.arkvis.hackernews.service;
 
-import com.arkvis.ycservice.model.Story;
-import com.arkvis.ycservice.repository.StoryRepository;
+import com.arkvis.hackernews.model.Story;
+import com.arkvis.hackernews.repository.StoryRepository;
 
 import java.io.IOException;
 import java.util.Collections;

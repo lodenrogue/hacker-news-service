@@ -1,7 +1,7 @@
-package com.arkvis.ycservice;
+package com.arkvis.hackernews;
 
-import com.arkvis.ycservice.model.Story;
-import com.arkvis.ycservice.service.TopStoryService;
+import com.arkvis.hackernews.model.Story;
+import com.arkvis.hackernews.service.TopStoryService;
 import com.google.gson.GsonBuilder;
 
 import java.util.Comparator;

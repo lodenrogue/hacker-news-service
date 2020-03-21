@@ -1,4 +1,4 @@
-package com.arkvis.ycservice.model;
+package com.arkvis.hackernews.model;
 
 public class Story {
     private Long id;

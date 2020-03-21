@@ -1,8 +1,8 @@
-package com.arkvis.ycservice.service;
+package com.arkvis.hackernews.service;
 
-import com.arkvis.ycservice.config.RetrofitConfig;
-import com.arkvis.ycservice.repository.StoryRepository;
-import com.arkvis.ycservice.repository.TopStoryRepository;
+import com.arkvis.hackernews.config.RetrofitConfig;
+import com.arkvis.hackernews.repository.StoryRepository;
+import com.arkvis.hackernews.repository.TopStoryRepository;
 
 public class TopStoryService extends AbstractStoryService {
 

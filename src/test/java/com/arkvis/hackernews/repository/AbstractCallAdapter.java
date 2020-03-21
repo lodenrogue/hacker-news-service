@@ -1,4 +1,4 @@
-package com.arkvis.ycservice.repository;
+package com.arkvis.hackernews.repository;
 
 import okhttp3.Request;
 import retrofit2.Call;
