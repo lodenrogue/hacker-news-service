@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    compile group: 'com.squareup.retrofit2', name: 'retrofit', version: '2.7.2'
+    compile group: 'com.squareup.retrofit2', name: 'converter-gson', version: '2.7.2'
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.9'
+
+
+}
