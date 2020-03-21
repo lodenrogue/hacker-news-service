@@ -5,9 +5,9 @@ import retrofit2.http.GET;
 
 import java.util.List;
 
-public interface ShowStoryRepository extends StoryRepository {
+public interface TopStoryRepository extends StoryRepository {
 
-    @GET("showstories.json")
+    @GET("topstories.json")
     Call<List<Long>> getStoryIds();
 
 }

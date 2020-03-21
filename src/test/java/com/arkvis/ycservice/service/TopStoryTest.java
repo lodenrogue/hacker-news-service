@@ -8,7 +8,7 @@ import java.util.List;
 
 import static org.junit.Assert.assertFalse;
 
-public class ShowStoryTest extends AbstractStoryTest {
+public class TopStoryTest extends AbstractStoryTest {
 
     @Before
     public void setUp() {
@@ -17,7 +17,7 @@ public class ShowStoryTest extends AbstractStoryTest {
 
     @Test
     public void should_returnShowStories_when_callingRealService() {
-        StoryService storyService = new ShowStoryService();
+        StoryService storyService = new TopStoryService();
         List<Story> stories = storyService.getAllStories();
         assertFalse(stories.isEmpty());
     }

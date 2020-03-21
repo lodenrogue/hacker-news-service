@@ -9,17 +9,16 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class ShowRepositoryImpl implements ShowStoryRepository {
+public class StoryRepositoryImpl implements StoryRepository {
 
     private Map<Long, Story> stories;
 
-    public ShowRepositoryImpl() {
+    public StoryRepositoryImpl() {
         stories = new HashMap<>();
     }
 
     public void addStories(List<Story> newStories) {
         newStories.forEach(story -> stories.put(story.getId(), story));
-
     }
 
     @Override
