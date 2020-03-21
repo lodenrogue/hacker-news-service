@@ -11,7 +11,22 @@ import java.util.stream.Collectors;
 public class Example {
 
     public static void main(String[] args) {
-        List<Story> stories = new TopStoryService().getStories(100);
+        sortedExample();
+        getAllExample();
+    }
+
+    private static void getAllExample() {
+        List<Story> stories = new TopStoryService().getAllStories();
+        System.out.println(new GsonBuilder()
+                .setPrettyPrinting()
+                .create()
+                .toJson(stories));
+    }
+
+    private static void sortedExample() {
+        int scoreThreshold = 100;
+        List<Story> stories = new TopStoryService().getStories(scoreThreshold);
+
         List<Story> sortedStories = stories.stream()
                 .filter(post -> post.getUrl() != null)
                 .sorted(Comparator.comparingInt(Story::getScore).reversed())
