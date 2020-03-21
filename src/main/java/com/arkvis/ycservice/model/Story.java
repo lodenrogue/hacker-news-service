@@ -1,6 +1,6 @@
 package com.arkvis.ycservice.model;
 
-public class Post {
+public class Story {
     private Long id;
     private Integer score;
     private String url;

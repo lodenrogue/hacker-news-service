@@ -1,7 +1,7 @@
 package com.arkvis.ycservice;
 
-import com.arkvis.ycservice.model.Post;
-import com.arkvis.ycservice.service.YCPostService;
+import com.arkvis.ycservice.model.Story;
+import com.arkvis.ycservice.service.ShowStoryService;
 import com.google.gson.GsonBuilder;
 
 import java.util.Comparator;
@@ -11,15 +11,15 @@ import java.util.stream.Collectors;
 public class Main {
 
     public static void main(String[] args) {
-        List<Post> posts = new YCPostService().getPosts(0);
-        List<Post> sortedPosts = posts.stream()
+        List<Story> stories = new ShowStoryService().getStories(0);
+        List<Story> sortedStories = stories.stream()
                 .filter(post -> post.getUrl() != null)
-                .sorted(Comparator.comparingInt(Post::getScore).reversed())
+                .sorted(Comparator.comparingInt(Story::getScore).reversed())
                 .collect(Collectors.toList());
 
         System.out.println(new GsonBuilder()
                 .setPrettyPrinting()
                 .create()
-                .toJson(sortedPosts));
+                .toJson(sortedStories));
     }
 }

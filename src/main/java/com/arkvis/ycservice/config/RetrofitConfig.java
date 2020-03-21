@@ -1,19 +1,21 @@
 package com.arkvis.ycservice.config;
 
-import com.arkvis.ycservice.service.YCService;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitConfig {
 
-    private RetrofitConfig() {}
+    private static final String BASE_URL = "https://hacker-news.firebaseio.com/v0/";
+
+    private RetrofitConfig() {
+    }
 
     private static Retrofit retrofit;
 
     public static Retrofit createRetrofit() {
         if (retrofit == null) {
             retrofit = new Retrofit.Builder()
-                    .baseUrl(YCService.BASE_URL)
+                    .baseUrl(BASE_URL)
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
         }
