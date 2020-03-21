@@ -8,10 +8,10 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Main {
+public class Example {
 
     public static void main(String[] args) {
-        List<Story> stories = new TopStoryService().getStories(0);
+        List<Story> stories = new TopStoryService().getStories(100);
         List<Story> sortedStories = stories.stream()
                 .filter(post -> post.getUrl() != null)
                 .sorted(Comparator.comparingInt(Story::getScore).reversed())
