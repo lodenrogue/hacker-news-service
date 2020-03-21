@@ -1,6 +1,10 @@
 # hacker-news-service
 Hacker News Java Service
 
+## Services Available
+- TopStoryService
+- ShowStoryService
+
 ## How to use
 ```
 List<Story> stories = new TopStoryService().getAllStories();
