@@ -1,6 +1,7 @@
 package com.arkvis.hackernews;
 
 import com.arkvis.hackernews.model.Story;
+import com.arkvis.hackernews.service.ShowStoryService;
 import com.arkvis.hackernews.service.TopStoryService;
 import com.google.gson.GsonBuilder;
 
@@ -12,7 +13,7 @@ public class Example {
 
     public static void main(String[] args) {
         sortedExample();
-        getAllExample();
+//        getAllExample();
     }
 
     private static void getAllExample() {
@@ -24,8 +25,8 @@ public class Example {
     }
 
     private static void sortedExample() {
-        int scoreThreshold = 100;
-        List<Story> stories = new TopStoryService().getStories(scoreThreshold);
+        int scoreThreshold = 20;
+        List<Story> stories = new ShowStoryService().getStories(scoreThreshold);
 
         List<Story> sortedStories = stories.stream()
                 .filter(post -> post.getUrl() != null)
