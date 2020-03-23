@@ -13,7 +13,7 @@ public class Example {
 
     public static void main(String[] args) {
         sortedExample();
-//        getAllExample();
+        getAllExample();
     }
 
     private static void getAllExample() {
