@@ -5,6 +5,7 @@ Hacker News Java Service
 - TopStoryService
 - ShowStoryService
 - NewStoryService
+- BestStoryService
 
 ## How to use
 ```
